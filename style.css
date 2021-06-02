@@ -1,0 +1,51 @@
+/*
+Theme Name: webStack
+Theme URI: https://renserve.com
+Description: webStack二次开发主题
+Version: 1.0.4
+Author: renserve
+Author URI: https://renserve.com
+Tags: 主题，导航主题
+*/
+/* custom style*/
+.overflow-x-auto{overflow-x:auto;overflow-y:unset}
+.overflow-y-auto{overflow-y:auto;overflow-x:unset}
+/*--- main_content ---  */
+.sites-list {overflow: hidden}
+.sites-list .hiderow{display: none}
+.category-item .row{display: block}
+.tab-item .row:first-child{display: block}
+/* --- slider_menu --- */
+.slider_menu[sliderTab]{position:relative;display:inline-block}
+.slider_menu[sliderTab]>.menu{position:relative;white-space:nowrap;margin:0;text-align:center;display:inline-block;background:rgba(0,0,0,.04);border-radius:100px;padding:5px}
+.slider_menu[sliderTab] .anchor{background:#FA5A64;border-radius:100px;width:60px;height:40px;opacity:0;-webkit-transition:.25s;transition:.25s}
+.slider_menu[sliderTab]>.menu>li{display:inline-block;cursor:pointer}
+.slider_menu[sliderTab]>.menu>li.next,.slider_menu[sliderTab]>.menu>li.prev,.slider_menu[sliderTab]>.menu>li>.sub-menu{display:none}
+.slider_menu[sliderTab]>.menu>li>a{display:block;text-decoration:none;position:relative;color:#666;height:40px;line-height:40px;text-align:center;font-size:14px;padding:0 16px;-webkit-transition:.25s;transition:.25s}
+.slider_menu[sliderTab]>.menu>li>a:hover{color:#fff}
+.slider_menu[sliderTab]>.menu>li>a.active{color:#fff}
+.slider_menu[sliderTab] ul:hover li:not(.hover) a.active{color:#888!important;/*background:#fff;border-radius:100px*/}
+.slider_menu.mini_tab[sliderTab]>.menu>li>a{height:26px;line-height:26px;padding:0 12px}
+.slider_menu.mini_tab[sliderTab]>.menu{padding:3px}
+.nav-pills .nav-link.active,.nav-pills .nav-link{background:unset!important;}
+/* --- slider_menu --- */
+#friendlink h4 {line-height: 24px;}
+#friendlink h4 .iconfont {float: left;margin-right:10px}
+/* --- link item --- */
+.row .xe-comment {
+    padding-right: 15px;}
+.row .linkTo {     position: absolute;
+    padding: 10px;
+    right: 0;
+    opacity: .3;
+    color: #6c757d;
+    top: 22px;}
+.row .linkTo:hover {opacity: 1;}
+/* --- white style --- */
+.white .sidebar-menu{background-color: #fff;}
+/* --- black style --- */
+.black .sidebar-menu{
+    background:#2c2e2f; }
+.black .sidebar-menu .logo-env{border-bottom:1px solid #313437}
+.black .sidebar-menu .main-menu a{border-bottom:1px solid #313437}
+
