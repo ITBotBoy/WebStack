@@ -85,12 +85,11 @@ include( 'templates/header-nav.php' );
                             <?php  
                             $contentinfo = get_the_content();
                             if( $contentinfo ){
-                                the_content();   
+                                the_content();
                             }else{
                                 echo get_post_meta(get_the_ID(), '_sites_sescribe', true);
                             }
                             ?>
-
                         </div>
                     <?php endwhile; ?>
                     </div>

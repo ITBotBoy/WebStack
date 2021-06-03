@@ -7,7 +7,12 @@ require get_template_directory() . '/inc/inc.php';
 add_filter('login_headerurl',function() {return get_bloginfo('url');});
 //登陆界面logo的title为博客副标题
 add_filter('login_headertext',function() {return get_bloginfo( 'description' );});
-
+function filterContent($contentInfo){
+    return preg_replace_callback("(<a href=\"(.+?)\"[^>]*>(.+?)<\/a>)",function ($match){
+        return '<a href="https://renserve.com/go/?url='.base64_encode($match[1]).'" target="_blank">'.$match[2].'</a>';
+    },$contentInfo);
+}
+add_filter( 'the_content','filterContent', 1);
 //WordPress 5.0+移除 block-library CSS
 add_action( 'wp_enqueue_scripts', 'fanly_remove_block_library_css', 100 );
 function fanly_remove_block_library_css() {
