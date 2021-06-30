@@ -214,10 +214,9 @@ $options[] = array(
             'id'      => 'ico_url',
             'type'    => 'text',
             'title'   => '图标源',
-            'default' => 'https://api.clowntool.cn/getico/?url=',
-            'desc'    => 'api 地址',
-            'after'   => '如果获取图标失效，请百度搜索‘获取网站图标api’替换能用的就可以了<br>或者自建api服务，源码地址：<a href="https://www.iowen.cn/favicon-api/" target="_blank">https://www.iowen.cn/favicon-api/</a>',
-        ),
+            'default' => 'https://get-favicon.vercel.app/api/get.php?url=',
+            'desc'    => 'api 地址'
+	),
         array(
             'id'      => 'url_format',
             'type'    => 'switcher',
