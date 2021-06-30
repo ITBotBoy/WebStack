@@ -11,7 +11,9 @@
 <?php endif; ?>
 <meta name="theme-color" content="#2C2E2F" />
 <meta name="keywords" content="<?php echo io_get_option('seo_home_keywords') ?>">
+<?php if ( io_get_option('seo_home_desc') ) : ?>
 <meta name="description" content="<?php echo io_get_option('seo_home_desc') ?>">
+<?php endif; ?>
 <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/screenshot.png">
 <link rel="shortcut icon" href="<?php echo io_get_option('favicon') ?>">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri().'/style.css'?>">
